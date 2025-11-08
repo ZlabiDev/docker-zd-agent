@@ -18,7 +18,7 @@ ENV PYTHONUNBUFFERED=1
 RUN apk add --no-cache python3=3.12.9-r0 pipx=1.6.0-r0
 
 # Install Node.js and npm
-RUN apk add --no-cache nodejs=20.15.1-r0 npm=10.9.1-r0
+RUN apk add --no-cache nodejs=20.19.5 npm=10.9.1-r0
 
 # Download and install Taskfile (task)
 RUN wget -O /tmp/task_linux_amd64.tar.gz https://github.com/go-task/task/releases/download/v3.24.0/task_linux_amd64.tar.gz && \
